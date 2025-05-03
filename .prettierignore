@@ -1,0 +1,23 @@
+dist/
+build/
+node_modules/
+
+*.config.js
+*.config.cjs
+
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+coverage/
+*.log
+public/
+.env
+.DS_Store
+.cache/
+dist-ssr/
+*.local
+
+# Ignore generated files
+auto-imports.d.ts
+components.d.ts
