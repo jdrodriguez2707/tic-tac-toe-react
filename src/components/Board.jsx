@@ -4,6 +4,7 @@ import { WinnerModal } from "./WinnerModal";
 import { TURNS } from "../logic/constants";
 import { checkWinnerFrom, checkEndGame } from "../logic/checkBoard";
 import { saveGameToStorage, resetGameFromStorage } from "../logic/storage";
+import confetti from "canvas-confetti";
 
 export const Board = () => {
   const [board, setBoard] = useState(() => {
@@ -35,6 +36,7 @@ export const Board = () => {
 
     if (newWinner) {
       setWinner(newWinner);
+      confetti();
     } else if (checkEndGame(newBoard)) {
       setWinner(false);
     }
