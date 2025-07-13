@@ -1,7 +1,7 @@
 export const TURNS = {
-  X: "✖️",
-  O: "⭕",
-};
+  X: '✖️',
+  O: '⭕'
+}
 
 export const WINNER_COMBOS = [
   // Horizontals
@@ -14,5 +14,5 @@ export const WINNER_COMBOS = [
   [2, 5, 8],
   // Diagonals
   [0, 4, 8],
-  [2, 4, 6],
-];
+  [2, 4, 6]
+]

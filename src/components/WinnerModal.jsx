@@ -1,17 +1,17 @@
-import { Square } from "./Square";
+import { Square } from './Square'
 
 export const WinnerModal = ({ winner, resetGame }) => {
-  if (winner === null) return;
+  if (winner === null) return
 
-  const matchResult = winner ? "The winner is:" : "It's a tie";
+  const matchResult = winner ? 'The winner is:' : "It's a tie"
 
   return (
-    <section className="winner">
-      <div className="text">
+    <section className='winner'>
+      <div className='text'>
         <h2>{matchResult}</h2>
 
         {winner && (
-          <div className="win">
+          <div className='win'>
             <Square>{winner}</Square>
           </div>
         )}
@@ -19,5 +19,5 @@ export const WinnerModal = ({ winner, resetGame }) => {
         <button onClick={resetGame}>Play again</button>
       </div>
     </section>
-  );
-};
+  )
+}

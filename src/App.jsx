@@ -1,5 +1,5 @@
-import { Board } from "./components/Board";
-import "./App.css";
+import { Board } from './components/Board'
+import './App.css'
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <h1>Tic Tac Toe</h1>
       <Board />
     </main>
-  );
+  )
 }
 
-export default App;
+export default App
