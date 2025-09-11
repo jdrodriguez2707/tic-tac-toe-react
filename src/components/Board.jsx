@@ -25,8 +25,7 @@ export const Board = () => {
   const updateBoard = index => {
     if (board[index] || winner) return
 
-    const newBoard = [...board]
-    newBoard[index] = turn
+    const newBoard = board.with(index, turn)
     setBoard(newBoard)
 
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
