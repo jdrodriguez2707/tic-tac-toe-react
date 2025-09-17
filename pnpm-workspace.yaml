@@ -1,0 +1,7 @@
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - react
+  - react-dom
+  - react-native
+  - random-motivational-msgs
